@@ -1,0 +1,27 @@
+2 options for data normalization
+-StandardScaler
+-MinMaxScaler
+
+PCA with 2 options for number of components (dimensions)
+-2
+-8
+
+Data mapping using clustering (2 options)
+-k-means clustering
+-agglomerative clustering
+
+4 different types of classifiers
+-naive bayes classifier
+-logistic regression classifier
+-linear svm classifier
+-random forest
+
+ensemble methods: bagging and adaboost
+
+use k-fold cross validation with k=4 for all validations (nested 4-fold if needed)
+
+Use pipelines and gridsearch
+
+base your algorithm/parameter selection on accuracy, AUC of ROC, and F-1 measure
+
+64 total tests?

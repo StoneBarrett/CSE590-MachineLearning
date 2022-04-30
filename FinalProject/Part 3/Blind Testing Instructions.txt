@@ -1,0 +1,13 @@
+Overview:
+
+ The blind test data contains a total of 90 unlabeled samples from the same Artworks dataset (64 extracted features). These samples were excluded from the data that were already provided with.
+Your task is to predict the labels of these 90 samples using your best trained model.
+Your submission will be evaluated based on its accuracy score.
+You should submit a csv file with exactly 90 entries without a header row. Each of the entries (row) is your predicted label for that same row of features.
+
+Submission instructions:
+
+Have your best trained classifier ready (e.g., clf)
+Load the provided blind test data by ignoring its header: X_b = pd.read_csv('blind_test_data.csv', header=None).values
+After adding any needed preprocessing, feed the blind test data to your classiifer to generate its predictions: y_pred = clf.predict(X_b)
+Save the predicted labels as a csv file and submit it. The file name should be: LastName_FirstName.csv: pd.DataFrame(y_pred).to_csv('LastName_FirstName.csv', index = None, header = None)
